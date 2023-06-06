@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="terms" transform="translate(-17 -14.942)">
+    <rect id="bg" width="30" height="30" rx="10" transform="translate(17 14.942)" fill="#c99200"/>
+    <g id="icon" transform="translate(1.402 1.713)">
+      <path id="Op_component_1" data-name="Op component 1" d="M172.533,460A2.533,2.533,0,0,0,170,462.533v13.508a2.533,2.533,0,0,0,2.533,2.533h10.131a2.533,2.533,0,0,0,2.533-2.533V465.91a.845.845,0,0,0-.247-.6l-5.066-5.065a.844.844,0,0,0-.6-.247Z" transform="translate(-147 -441.058)" fill="#fff"/>
+      <path id="Combined_Shape" data-name="Combined Shape" d="M.8,8a.8.8,0,0,1,0-1.6H7.2A.8.8,0,0,1,7.2,8Zm0-3.2a.8.8,0,0,1,0-1.6H7.2a.8.8,0,0,1,0,1.6Zm0-3.2A.8.8,0,1,1,.8,0H2.4a.8.8,0,0,1,0,1.6Z" transform="translate(26.598 25.229)" fill="#c99200"/>
+      <path id="Op_component_2" data-name="Op component 2" d="M181.688,465.065h4.221a.844.844,0,0,1,0,1.688h-5.066a.844.844,0,0,1-.844-.844v-5.065a.844.844,0,1,1,1.688,0Z" transform="translate(-148.558 -441.058)" fill="#c99200"/>
+    </g>
+  </g>
+</svg>

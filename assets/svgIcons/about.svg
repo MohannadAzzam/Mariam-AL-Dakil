@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="about" transform="translate(-17 -14.942)">
+    <rect id="bg" width="30" height="30" rx="10" transform="translate(17 14.942)" fill="#c99200"/>
+    <g id="icon">
+      <circle id="Op_component_1" data-name="Op component 1" cx="10" cy="10" r="10" transform="translate(22 19.941)" fill="#fff"/>
+      <path id="Combined_Shape" data-name="Combined Shape" d="M1004.09,540.636V537a.909.909,0,1,1,1.819,0v3.636a.909.909,0,0,1-1.819,0Zm.266-5.72a.91.91,0,1,1,.643.266A.91.91,0,0,1,1004.357,534.916Z" transform="translate(-973 -507.059)" fill="#c99200"/>
+    </g>
+  </g>
+</svg>
