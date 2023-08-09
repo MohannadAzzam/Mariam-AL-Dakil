@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:get/get.dart';
 
 import '../../../../constants.dart';
-import '../../../../core/utils/assets.dart';
 import '../../widget/custom_home_text.dart';
 
 class DrawerUnit extends StatelessWidget {
@@ -47,7 +45,7 @@ class DrawerUnit extends StatelessWidget {
             SizedBox(
               width: 27.w,
             ),
-            CustomHomeText(text: text)
+            CustomText(text: text)
           ],
         ),
       ),

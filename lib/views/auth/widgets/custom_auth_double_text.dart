@@ -39,7 +39,7 @@ class CustomAuthDoubleText extends StatelessWidget {
           child: Text(
             textTwo,
             style: GoogleFonts.playfairDisplay(
-                color: kSecondaryColor,
+                color: kGoldenColor,
                 fontSize: kAuthTextFontSize.sp,
                 fontWeight: FontWeight.bold),
           ),

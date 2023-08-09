@@ -3,13 +3,13 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mariam_aldakhil/constants.dart';
 
-class CustomHomeText extends StatelessWidget {
+class CustomText extends StatelessWidget {
   final String text;
   final FontWeight? fontWeight;
   final double? fontSize;
   final Color? color;
 
-  const CustomHomeText(
+  const CustomText(
       {Key? key,
       required this.text,
       this.fontWeight,

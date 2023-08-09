@@ -1,18 +1,17 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 /////////////////////////////////////////////////////////////////////////
 // Color constants
 const kButtonColor = Color(0xffECB7BF);
-const kSecondaryColor = Color(0xffC99200);
+const kGoldenColor = Color(0xffC99200);
 const kBlackColor = Color(0xff2A2525);
 const kGreyColor = Color(0xffBEBEBE);
+const kLightGreyColor = Color(0xffF2F2F2);
+const kDarkGreyColor = Color(0xff717171);
 const kDrawerBorder = Color(0xffF2F2F2);
 
 const kContainerShadow = [
-
     BoxShadow(
         // blurStyle: BlurStyle.solid,
         // color: Color(0xff000000),

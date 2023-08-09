@@ -6,9 +6,9 @@ import 'package:mariam_aldakhil/constants.dart';
 import 'package:mariam_aldakhil/views/auth/forgot_password/forgot_password_page.dart';
 import 'package:mariam_aldakhil/views/auth/login/login_view.dart';
 import 'package:mariam_aldakhil/views/auth/register/register_page.dart';
+import 'package:mariam_aldakhil/views/courseDetails/course_details_view.dart';
 import 'package:mariam_aldakhil/views/courseView/course_view.dart';
 import 'package:mariam_aldakhil/views/homeView/home_view.dart';
-import 'package:mariam_aldakhil/views/slapshView/splashView.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,12 +31,12 @@ class MyApp extends StatelessWidget {
           theme: ThemeData(
             fontFamily: GoogleFonts.playfairDisplay().toString(),
             // useMaterial3: true,
-            appBarTheme:  AppBarTheme(
-              elevation: kAppBarElevation,
-              titleTextStyle: GoogleFonts.playfairDisplay(
-                  color: kBlackColor,
-                  fontSize: 18,
-                  fontWeight: kAppBarFontWeight),
+            appBarTheme: AppBarTheme(
+                elevation: kAppBarElevation,
+                titleTextStyle: GoogleFonts.playfairDisplay(
+                    color: kBlackColor,
+                    fontSize: 18,
+                    fontWeight: kAppBarFontWeight),
                 backgroundColor: kAppBarColor,
                 centerTitle: true,
                 shape: RoundedRectangleBorder(
@@ -50,7 +50,7 @@ class MyApp extends StatelessWidget {
           getPages: [
             GetPage(
               name: '/',
-              page: () => const SplashView(),
+              page: () => const CoursePage(),
               transition: Transition.fade,
             ),
             GetPage(
@@ -72,6 +72,10 @@ class MyApp extends StatelessWidget {
             GetPage(
                 name: '/coursePage',
                 page: () => const CoursePage(),
+                transition: Transition.fadeIn),
+            GetPage(
+                name: '/courseDetailsPage',
+                page: () => const CourseDetailsPage(),
                 transition: Transition.fadeIn),
           ],
           // home:

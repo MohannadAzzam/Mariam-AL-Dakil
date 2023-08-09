@@ -35,7 +35,7 @@ class HomeViewBody extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                const CustomHomeText(
+                const CustomText(
                   text: "Checkout Our Demos",
                   fontSize: 14,
                 ),
@@ -75,13 +75,13 @@ class HomeViewBody extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: [
-                              const CustomHomeText(
+                              const CustomText(
                                   text:
                                       "How to Add lightning effect in photos",color: Colors.white,),
                               SizedBox(
                                 height: 3.h,
                               ),
-                              const CustomHomeText(
+                              const CustomText(
                                 text: "Photoshop",
                                 fontSize: 13,
                                 color: kGreyColor,
@@ -103,7 +103,7 @@ class HomeViewBody extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                const CustomHomeText(
+                const CustomText(
                   text: "Our Free Courses",
                   color: kBlackColor,
                   fontSize: 14,
@@ -152,9 +152,9 @@ class HomeViewBody extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: const [
-                              CustomHomeText(
+                              CustomText(
                                 text: "Arts and Humanities",
-                                color: kSecondaryColor,
+                                color: kGoldenColor,
                               ),
                               SizedBox(
                                   // height: 13.h,
@@ -198,9 +198,9 @@ class HomeViewBody extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: const [
-                              CustomHomeText(
+                              CustomText(
                                 text: "Computer Science",
-                                color: kSecondaryColor,
+                                color: kGoldenColor,
                               ),
                               SizedBox(
                                   // height: 13.h,
@@ -243,9 +243,9 @@ class HomeViewBody extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: const [
-                              CustomHomeText(
+                              CustomText(
                                 text: "Economics and Finance",
-                                color: kSecondaryColor,
+                                color: kGoldenColor,
                               ),
                               SizedBox(
                                   // height: 13.h,
@@ -270,7 +270,7 @@ class HomeViewBody extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                const CustomHomeText(
+                const CustomText(
                   text: "Our Paid Courses",
                   color: kBlackColor,
                   fontSize: 14,
@@ -318,9 +318,9 @@ class HomeViewBody extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: const [
-                              CustomHomeText(
+                              CustomText(
                                 text: "Social Media Marketing",
-                                color: kSecondaryColor,
+                                color: kGoldenColor,
                               ),
                               SizedBox(
                                   // height: 13.h,
@@ -363,9 +363,9 @@ class HomeViewBody extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: const [
-                              CustomHomeText(
+                              CustomText(
                                 text: "Social Media Influencer",
-                                color: kSecondaryColor,
+                                color: kGoldenColor,
                               ),
                               SizedBox(
                                   // height: 13.h,
@@ -407,9 +407,9 @@ class HomeViewBody extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: const [
-                              CustomHomeText(
+                              CustomText(
                                 text: "Biology & The Scientific",
-                                color: kSecondaryColor,
+                                color: kGoldenColor,
                               ),
                               SizedBox(
                                   // height: 13.h,

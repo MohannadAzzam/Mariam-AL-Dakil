@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
-import 'package:mariam_aldakhil/views/courseView/course_view.dart';
 import 'package:mariam_aldakhil/views/homeView/drawer/drawer_widget/drawer_unit.dart';
 
-import '../../../constants.dart';
 import '../../../core/utils/assets.dart';
 import '../widget/custom_home_text.dart';
 
@@ -28,7 +25,7 @@ class DrawerBody extends StatelessWidget {
                     const AssetImage(AssetsData.drawerProfileImage),
               ),
             ),
-            const CustomHomeText(
+            const CustomText(
               text: "Rachelle D. Michael",
               fontSize: 22,
             ),

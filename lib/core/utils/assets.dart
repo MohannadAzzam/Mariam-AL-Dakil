@@ -18,6 +18,7 @@ class AssetsData {
   static const emailSvg = 'assets/svgIcons/email.svg';
   static const aboutSvg = 'assets/svgIcons/about.svg';
   static const arrowRightSvg = 'assets/svgIcons/arrow_right.svg';
+  static const back = 'assets/svgIcons/back.svg';
   static const bookSvg = 'assets/svgIcons/book.svg';
   static const cartSvg = 'assets/svgIcons/cart.svg';
   static const contactSvg = 'assets/svgIcons/contact.svg';

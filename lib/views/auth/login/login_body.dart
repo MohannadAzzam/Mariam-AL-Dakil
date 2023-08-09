@@ -50,7 +50,7 @@ class LoginBody extends StatelessWidget {
                     },
                     child: const CustomAuthText(
                         text: "Forgot password",
-                        textColor: kSecondaryColor,
+                        textColor: kGoldenColor,
                         fontSize: kAuthTextFontSize,
                         fontWeight: FontWeight.bold) // Text(
                     ,
