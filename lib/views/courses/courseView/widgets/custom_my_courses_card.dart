@@ -1,39 +1,38 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:get/get.dart';
+import '../../../../constants.dart';
+import '../../../../core/utils/assets.dart';
+import '../../../homeView/widget/custom_home_text.dart';
 
-import '../../../constants.dart';
-import '../../../core/utils/assets.dart';
-import '../../homeView/widget/custom_home_text.dart';
+class CustomMyCoursesCard extends StatelessWidget {
+  final Function()? onTap;
+  const CustomMyCoursesCard({Key? key, this.onTap}) : super(key: key);
 
-class CustomAllCoursesCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.only(top: 15.h, left: 15.w, right: 15.w),
-      decoration: BoxDecoration(
+      decoration:  BoxDecoration(
           color: kDrawerBorder,
           boxShadow: kContainerShadow,
           borderRadius: BorderRadius.all(Radius.circular(15.r))),
       height: 84.h,
       width: 345.w,
       child: InkWell(
-        onTap: () {
-          Get.toNamed('courseDetailsPage');
-        },
+        onTap: onTap,
         child: Row(
           children: [
             Container(
               height: 70.h,
               width: 70.w,
-              margin: EdgeInsets.only(
-                  top: 7.h, bottom: 7.h, left: 7.w, right: 12.w),
+              margin:
+              EdgeInsets.only(top: 7.h, bottom: 7.h, left: 7.w, right: 12.w),
               decoration: BoxDecoration(
                   border: Border.all(color: Colors.transparent),
-                  borderRadius: BorderRadius.all(
+                  borderRadius:  BorderRadius.all(
                     Radius.circular(15.r),
                   ),
-                  image: const DecorationImage(
+                  image:  DecorationImage(
                       image: AssetImage(AssetsData.homeThreeThree),
                       fit: BoxFit.cover)),
             ),
@@ -41,33 +40,44 @@ class CustomAllCoursesCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const CustomText(text: 'Business Management'),
+                const CustomText(text: 'Biology & The Scientific Method'),
                 Row(
-                  children: [
+                  children:  [
                     const CustomText(
-                      text: 'By',
+                      text: 'Start on:',
                       color: kGreyColor,
                       fontSize: 12,
                     ),
                     SizedBox(
-                      width: 2.w,
+                      width: 14.w,
                     ),
                     const CustomText(
-                      text: 'Betty R. Roberts',
+                      text: '30 Jan 2020',
                       fontSize: 12,
                     ),
                   ],
                 ),
                 Row(
-                  children: const [
-                    CustomText(
+                  children:  [
+                    const CustomText(
+                      text: '05',
+                      color: kBlackColor,
+                      fontSize: 12,
+                    ), const CustomText(
+                      text: ' of',
+                      color: kBlackColor,
+                      fontSize: 12,
+                    ), SizedBox(
+                      width: 2.w,
+                    ),const CustomText(
                       text: '14',
-                      color: kGoldenColor,
+                      color: kBlackColor,
                       fontSize: 12,
                     ),
-                    CustomText(
+
+                    const CustomText(
                       text: ' Lessons',
-                      color: kGoldenColor,
+                      color: kBlackColor,
                       fontSize: 12,
                     ),
                   ],
@@ -77,8 +87,7 @@ class CustomAllCoursesCard extends StatelessWidget {
           ],
         ),
       ),
-    );
+    )
+    ;
   }
-
-  const CustomAllCoursesCard({Key? key}) : super(key: key);
 }

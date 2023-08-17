@@ -22,6 +22,18 @@ const kContainerShadow = [
 
 ];
 
+const kPlayContainerShadow = [
+    BoxShadow(
+        // blurStyle: BlurStyle.normal,
+        // blurStyle: BlurStyle.solid,
+        // color: Color(0xff000000),
+        color: Color(0x1a000000),
+        blurRadius: 100,
+        offset: Offset(0, 0),
+        spreadRadius: 0)
+
+];
+
 ////////////////////////////////////
 //App bar
 const kAppBarFontWeight = FontWeight.w900;

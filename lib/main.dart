@@ -3,12 +3,19 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mariam_aldakhil/constants.dart';
+import 'package:mariam_aldakhil/views/courses/addCourseReviewView/add_course_Review_view.dart';
 import 'package:mariam_aldakhil/views/auth/forgot_password/forgot_password_page.dart';
 import 'package:mariam_aldakhil/views/auth/login/login_view.dart';
 import 'package:mariam_aldakhil/views/auth/register/register_page.dart';
-import 'package:mariam_aldakhil/views/courseDetails/course_details_view.dart';
-import 'package:mariam_aldakhil/views/courseView/course_view.dart';
+import 'package:mariam_aldakhil/views/courses/courseDetails/course_details_view.dart';
+import 'package:mariam_aldakhil/views/courses/courseView/course_view.dart';
 import 'package:mariam_aldakhil/views/homeView/home_view.dart';
+import 'package:mariam_aldakhil/views/courses/myCourseDetails/my_course_details.dart';
+import 'package:mariam_aldakhil/views/news/news_details/news_details_view.dart';
+import 'package:mariam_aldakhil/views/news/news_view/news_view.dart';
+import 'package:mariam_aldakhil/views/reviewsView/reviews_view.dart';
+
+import 'test.dart';
 
 void main() {
   runApp(const MyApp());
@@ -50,7 +57,7 @@ class MyApp extends StatelessWidget {
           getPages: [
             GetPage(
               name: '/',
-              page: () => const CoursePage(),
+              page: () => const TestPage(),
               transition: Transition.fade,
             ),
             GetPage(
@@ -76,6 +83,26 @@ class MyApp extends StatelessWidget {
             GetPage(
                 name: '/courseDetailsPage',
                 page: () => const CourseDetailsPage(),
+                transition: Transition.fadeIn),
+            GetPage(
+                name: '/myCourseDetailsPage',
+                page: () => const MyCourseDetailsPage(),
+                transition: Transition.fadeIn),
+            GetPage(
+                name: '/addCourseReviewPage',
+                page: () => const AddCourseReviewPage(),
+                transition: Transition.fadeIn),
+            GetPage(
+                name: '/reviewsPage',
+                page: () => const ReviewsPage(),
+                transition: Transition.fadeIn),
+            GetPage(
+                name: '/newsPage',
+                page: () => const NewsPage(),
+                transition: Transition.fadeIn),
+            GetPage(
+                name: '/newsDetailsPage',
+                page: () => const NewsDetailsPage(),
                 transition: Transition.fadeIn),
           ],
           // home:

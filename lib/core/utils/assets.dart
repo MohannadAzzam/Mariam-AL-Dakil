@@ -13,6 +13,11 @@ class AssetsData {
   static const homeThreeThree = 'assets/images/home_three_three.png';
 
   static const drawerProfileImage = 'assets/images/profile_image.png';
+  static const ratingFaceImage = 'assets/images/rating_face.jpeg';
+
+  static const carImage = 'assets/images/car.jpg';
+  static const serverImage = 'assets/images/server.jpg';
+  static const towerImage = 'assets/images/towers.jpg';
 
   /////////////////////////////
   static const emailSvg = 'assets/svgIcons/email.svg';
@@ -45,4 +50,6 @@ class AssetsData {
   static const logoSvg = 'assets/svgIcons/logo.svg';
   static const forgotPasswordSvg = 'assets/svgIcons/graphic_forgot.svg';
   static const menuSvg = 'assets/svgIcons/side_menu.svg';
+  static const fullStarSvg = 'assets/svgIcons/full_star.svg';
+  static const emptyStarSvg = 'assets/svgIcons/empty_star.svg';
 }

@@ -21,6 +21,10 @@ class CustomText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text,
+      // softWrap: true,
+      // textAlign: TextAlign.justify,
+      // overflow: TextOverflow.ellipsis,
+      // maxLines: ,
       style: GoogleFonts.playfairDisplay(
           fontWeight: fontWeight ?? FontWeight.bold,
           fontSize: fontSize?.sp ?? 15.sp,

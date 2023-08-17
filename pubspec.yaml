@@ -41,6 +41,10 @@ dependencies:
   shared_preferences: ^2.1.1
   google_fonts: ^4.0.4
   flutter_svg: ^2.0.5
+  readmore: ^2.2.0
+  flutter_rating_bar: ^4.0.1
+  random_name_generator: ^1.1.0
+  faker: ^2.1.0
 
 dev_dependencies:
   flutter_test:
