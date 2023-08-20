@@ -29,8 +29,6 @@ class HomePage extends StatelessWidget {
           "Home",
         ),
       ),
-      // ),
-      // backgroundColor:
       body: const HomeViewBody(),
     );
   }

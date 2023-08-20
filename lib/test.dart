@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:get/get.dart';
 import 'package:mariam_aldakhil/core/utils/assets.dart';
 import 'constants.dart';
+import 'controllers/product_controller.dart';
 import 'views/homeView/widget/custom_home_text.dart';
 
 class TestPage extends StatelessWidget {
@@ -9,51 +12,134 @@ class TestPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
+    var productController = Get.put(ProductController());
     return Scaffold(
         appBar: AppBar(
           title: const Text('تست ولااااااك'),
         ),
         body: Container(
           margin:
-              EdgeInsets.only(bottom: 18.h, left: 15.w, right: 15.w, top: 18.h),
-          height: 218.h,
+              EdgeInsets.only(bottom: 15.h, left: 15.w, right: 15.w, top: 18.h),
+          height: 84.h,
           width: 345.w,
           decoration: BoxDecoration(
               color: Colors.white,
               boxShadow: kContainerShadow,
               borderRadius: BorderRadius.all(Radius.circular(15.r))),
-          child: Column(
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              ClipRRect(
-                borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(15.r),
-                    topRight: Radius.circular(15.r)),
-                child: Image.asset(
-                  AssetsData.serverImage,
-                  fit: BoxFit.cover,
-                  height: 130.h,
-                  width: 345.w,
-                ),
+              Container(
+                margin: EdgeInsets.only(
+                    top: 7.h, left: 7.w, bottom: 7.h, right: 12.w),
+                width: 70.w,
+                height: 70.h,
+                decoration: BoxDecoration(
+                    image: DecorationImage(
+                        image: AssetImage(AssetsData.img), fit: BoxFit.cover),
+                    color: Colors.white,
+                    boxShadow: kContainerShadow,
+                    borderRadius: BorderRadius.all(Radius.circular(15.r))),
               ),
-              Padding(
-                padding: EdgeInsets.all(10.w),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: const [
-                    CustomText(
-                      text:
-                          "Oracle opens new cloud center in Saudi with further GCC expansion planned",
-                      fontSize: 15,
+              Expanded(
+                // color: Colors.red,
+                child: Stack(
+                  children: [
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                            margin: EdgeInsets.only(right: 64),
+                            // width: 244.w,
+                            child: CustomText(
+                              text: "The Earth Ceramic Coffee Mug",
+                              fontSize: 14,
+                              textOverflow: TextOverflow.ellipsis,
+                            )),
+                        CustomText(
+                          text: "280 KWD",
+                          fontSize: 15,
+                          color: kGoldenColor,
+                        ),
+                      ],
                     ),
-                    CustomText(
-                      text: "04 Feb 2020 at 10:10 AM",
-                      fontSize: 12,
-                      color: kGreyColor,
-                    ),
+                    Positioned(
+                        top: 10.h,
+                        right: 10.w,
+                        child: SvgPicture.asset(AssetsData.deleteSvg)),
+                    Positioned(
+                      height: 30.h,
+                      width: 88.w,
+                      bottom: 10.h,
+                      right: 10.w,
+                      child: Container(
+                        decoration: BoxDecoration(
+                            border: Border.all(color: kGreyColor),
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(15))),
+                        child: Row(
+                          children: [
+                            GetBuilder<ProductController>(builder: (_) {
+                              return Expanded(
+                                  child: InkWell(
+                                      onTap: () {
+                                        productController.decrement();
+                                      },
+                                      child: Icon(Icons.remove,
+                                          color: kGreyColor, size: 13.r)));
+                            }),
+                            GetBuilder<ProductController>(builder: (_) {
+                              return CustomText(
+                                  text:
+                                      productController.productCount.toString(),
+                                  fontSize: 14);
+                            }),
+                            GetBuilder<ProductController>(builder: (_) {
+                              return Expanded(
+                                  child: InkWell(
+                                      onTap: () {
+                                        _.increment();
+                                      },
+                                      child: Icon(Icons.add,
+                                          color: kGreyColor, size: 13.r)));
+                            }),
+                          ],
+                        ),
+                      ),
+                    )
                   ],
                 ),
               ),
+              // Row(
+              //   // crossAxisAlignment: CrossAxisAlignment.center,
+              //   // mainAxisAlignment: MainAxisAlignment.end,
+              //   children: [
+              //     GetBuilder<ProductController>(builder: (_) {
+              //       return Expanded(
+              //           child: InkWell(
+              //               onTap: () {
+              //                 productController.decrement();
+              //               },
+              //               child: Icon(Icons.remove,
+              //                   color: kGreyColor, size: 13.r)));
+              //     }),
+              //     GetBuilder<ProductController>(builder: (_) {
+              //       return CustomText(
+              //           text: productController.productCount.toString(),
+              //           fontSize: 14);
+              //     }),
+              //     GetBuilder<ProductController>(builder: (_) {
+              //       return Expanded(
+              //           child: InkWell(
+              //               onTap: () {
+              //                 _.increment();
+              //               },
+              //               child: Icon(Icons.add,
+              //                   color: kGreyColor, size: 13.r)));
+              //     }),
+              //   ],
+              // )
             ],
           ),
         ));

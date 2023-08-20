@@ -19,6 +19,9 @@ class AssetsData {
   static const serverImage = 'assets/images/server.jpg';
   static const towerImage = 'assets/images/towers.jpg';
 
+
+  static const img = 'assets/images/img.png';
+
   /////////////////////////////
   static const emailSvg = 'assets/svgIcons/email.svg';
   static const aboutSvg = 'assets/svgIcons/about.svg';
@@ -52,4 +55,5 @@ class AssetsData {
   static const menuSvg = 'assets/svgIcons/side_menu.svg';
   static const fullStarSvg = 'assets/svgIcons/full_star.svg';
   static const emptyStarSvg = 'assets/svgIcons/empty_star.svg';
+  static const emptyCartSvg = 'assets/svgIcons/empty_cart.svg';
 }

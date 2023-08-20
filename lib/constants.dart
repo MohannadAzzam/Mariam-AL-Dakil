@@ -3,6 +3,8 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 /////////////////////////////////////////////////////////////////////////
 // Color constants
+const kPrimaryColor = Color(0xffECB7BF);
+Color kPrimaryColorOP30 = const Color(0xffECB7BF).withOpacity(0.3);
 const kButtonColor = Color(0xffECB7BF);
 const kGoldenColor = Color(0xffC99200);
 const kBlackColor = Color(0xff2A2525);

@@ -3,6 +3,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mariam_aldakhil/constants.dart';
+import 'package:mariam_aldakhil/views/cart/cart_view/cart_view.dart';
+import 'package:mariam_aldakhil/views/cart/emptyCartView/empty_cart_view.dart';
 import 'package:mariam_aldakhil/views/courses/addCourseReviewView/add_course_Review_view.dart';
 import 'package:mariam_aldakhil/views/auth/forgot_password/forgot_password_page.dart';
 import 'package:mariam_aldakhil/views/auth/login/login_view.dart';
@@ -13,9 +15,11 @@ import 'package:mariam_aldakhil/views/homeView/home_view.dart';
 import 'package:mariam_aldakhil/views/courses/myCourseDetails/my_course_details.dart';
 import 'package:mariam_aldakhil/views/news/news_details/news_details_view.dart';
 import 'package:mariam_aldakhil/views/news/news_view/news_view.dart';
+import 'package:mariam_aldakhil/views/products/productsDetails/product_details.dart';
+import 'package:mariam_aldakhil/views/products/productsView/products_view.dart';
 import 'package:mariam_aldakhil/views/reviewsView/reviews_view.dart';
+import 'package:mariam_aldakhil/views/slapshView/splashView.dart';
 
-import 'test.dart';
 
 void main() {
   runApp(const MyApp());
@@ -57,7 +61,7 @@ class MyApp extends StatelessWidget {
           getPages: [
             GetPage(
               name: '/',
-              page: () => const TestPage(),
+              page: () => const SplashView(),
               transition: Transition.fade,
             ),
             GetPage(
@@ -104,6 +108,23 @@ class MyApp extends StatelessWidget {
                 name: '/newsDetailsPage',
                 page: () => const NewsDetailsPage(),
                 transition: Transition.fadeIn),
+            GetPage(
+                name: '/productsPage',
+                page: () => const ProductsPage(),
+                transition: Transition.fadeIn),
+            GetPage(
+                name: '/productDetailsPage',
+                page: () =>  ProductDetailsPage(),
+                transition: Transition.fadeIn),
+ GetPage(
+                name: '/EmptyCartPage',
+                page: () =>  EmptyCartPage(),
+                transition: Transition.fadeIn),
+ GetPage(
+                name: '/cartPage',
+                page: () =>  CartPage(),
+                transition: Transition.fadeIn),
+
           ],
           // home:
         );
