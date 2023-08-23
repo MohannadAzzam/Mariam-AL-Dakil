@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+
 /////////////////////////////////////////////////////////////////////////
 // Color constants
 const kPrimaryColor = Color(0xffECB7BF);
@@ -12,28 +13,27 @@ const kGreyColor = Color(0xffBEBEBE);
 const kLightGreyColor = Color(0xffF2F2F2);
 const kDarkGreyColor = Color(0xff717171);
 const kDrawerBorder = Color(0xffF2F2F2);
+const kTextFormBorder = Color(0xffE1E1E1);
 
 const kContainerShadow = [
-    BoxShadow(
-        // blurStyle: BlurStyle.solid,
-        // color: Color(0xff000000),
-        color: Color(0x1a000000),
-        blurRadius: 19,
-        offset: Offset(0, 12),
-        spreadRadius: 0)
-
+  BoxShadow(
+      // blurStyle: BlurStyle.solid,
+      // color: Color(0xff000000),
+      color: Color(0x1a000000),
+      blurRadius: 19,
+      offset: Offset(0, 12),
+      spreadRadius: 0)
 ];
 
 const kPlayContainerShadow = [
-    BoxShadow(
-        // blurStyle: BlurStyle.normal,
-        // blurStyle: BlurStyle.solid,
-        // color: Color(0xff000000),
-        color: Color(0x1a000000),
-        blurRadius: 100,
-        offset: Offset(0, 0),
-        spreadRadius: 0)
-
+  BoxShadow(
+      // blurStyle: BlurStyle.normal,
+      // blurStyle: BlurStyle.solid,
+      // color: Color(0xff000000),
+      color: Color(0x1a000000),
+      blurRadius: 100,
+      offset: Offset(0, 0),
+      spreadRadius: 0)
 ];
 
 ////////////////////////////////////

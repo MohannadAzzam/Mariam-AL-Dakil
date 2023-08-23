@@ -30,14 +30,14 @@ class CartPage extends StatelessWidget {
       body: SafeArea(
           child: SingleChildScrollView(
         child: Container(
-          margin: EdgeInsets.only(left: 15.w,right: 15.w),
+          margin: EdgeInsets.only(left: 15.w, right: 15.w),
           child: Column(
             children: [
               //25
               SizedBox(height: 25.h),
               // CustomCartCard(),
               ListView.builder(
-                itemCount: 2,
+                  itemCount: 2,
                   shrinkWrap: true,
                   physics: const NeverScrollableScrollPhysics(),
                   itemBuilder: (context, index) {
@@ -97,7 +97,10 @@ class CartPage extends StatelessWidget {
 //26.5
               SizedBox(height: 26.5.h),
 
-              const CustomButton(Text: "CHEKOUT")
+              CustomButton(
+                Text: "CHEKOUT",
+                width: 345,
+              )
             ],
           ),
         ),

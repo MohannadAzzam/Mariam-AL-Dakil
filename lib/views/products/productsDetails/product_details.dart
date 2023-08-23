@@ -45,7 +45,9 @@ class ProductDetailsPage extends StatelessWidget {
       appBar: AppBar(
         actions: [
           IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Get.toNamed('cartPage');
+              },
               icon: Badge(
                 backgroundColor: Colors.white,
                 label: const CustomText(
@@ -177,6 +179,7 @@ class ProductDetailsPage extends StatelessWidget {
                       // color: Colors.red,
                       alignment: Alignment.center,
                       child: CustomButton(
+                        width: 345,
                         Text: "ADD TO CART",
                         onPressed: () {
                           //
@@ -190,8 +193,6 @@ class ProductDetailsPage extends StatelessWidget {
                               productList[data.id].title,
                               productList[data.id].price,
                               productList[data.id].tax));
-
-
 
                           // Get.defaultDialog(title: "${productsCart[0].title}");
                         },

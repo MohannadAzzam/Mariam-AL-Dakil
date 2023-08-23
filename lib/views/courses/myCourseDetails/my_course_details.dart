@@ -17,7 +17,7 @@ class MyCourseDetailsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-         TextStyle lessAndMore = GoogleFonts.playfairDisplay(
+    TextStyle lessAndMore = GoogleFonts.playfairDisplay(
         fontSize: 14.sp, fontWeight: FontWeight.bold, color: kBlackColor);
     var readMoreText =
         "Relax and do whatever fits with your design process. Don’t set a lot of restrictive hard-and-fast rules. Use filler text where it helps your design process, but use real content if you’ve got it, as long as it doesn’t distract and slow down your design process use real content where possible, and where it doesn’t create too much distraction Relax and do whatever fits with your design process. Don’t set a lot of restrictive hard-and-fast rules. Use filler text where it helps your design process, but use real content if you’ve got it, as long as it doesn’t distract and slow down your design process use real content where possible, and where it doesn’t create too much distraction ";
@@ -26,9 +26,13 @@ class MyCourseDetailsPage extends StatelessWidget {
           height: 80.h,
           padding: const EdgeInsets.all(15),
           width: Get.width,
-          child:  CustomButton(Text: "ADD REVIEW",onPressed: (){
-            Get.toNamed('addCourseReviewPage');
-          },),
+          child: CustomButton(
+            width: 345,
+            Text: "ADD REVIEW",
+            onPressed: () {
+              Get.toNamed('addCourseReviewPage');
+            },
+          ),
         ),
         appBar: AppBar(
           leading: Builder(builder: (context) {
@@ -67,7 +71,6 @@ class MyCourseDetailsPage extends StatelessWidget {
                       SizedBox(
                         width: 31.w,
                       ),
-
                     ],
                   ),
                   SizedBox(

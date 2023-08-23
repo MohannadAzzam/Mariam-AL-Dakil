@@ -62,14 +62,18 @@ class DrawerBody extends StatelessWidget {
               icon: AssetsData.cartSvg,
               onTap: () => Get.toNamed('/EmptyCartPage'),
             ),
-            const DrawerUnit(
-                hasBorder: false,
-                text: "My Profile",
-                icon: AssetsData.profileSvg),
-            const DrawerUnit(
-                hasBorder: true,
-                text: "Settings",
-                icon: AssetsData.settingsSvg),
+            DrawerUnit(
+              hasBorder: false,
+              text: "My Profile",
+              icon: AssetsData.profileSvg,
+              onTap: () => Get.offNamed('/profilePage'),
+            ),
+            DrawerUnit(
+              hasBorder: true,
+              text: "Settings",
+              icon: AssetsData.settingsSvg,
+              onTap: () => Get.toNamed('settingsPage'),
+            ),
             const DrawerUnit(
                 hasBorder: false, text: "LogOut", icon: AssetsData.logoutSvg),
             // Divider(color: kGreyColor ,thickness: 1.h,),

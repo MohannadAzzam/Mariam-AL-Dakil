@@ -31,7 +31,8 @@ class AddCourseReviewPage extends StatelessWidget {
       body: SafeArea(
           child: SingleChildScrollView(
         child: Container(
-          margin: EdgeInsets.only(top: 25.h, left: 15.w, right: 15.w,bottom: 25),
+          margin:
+              EdgeInsets.only(top: 25.h, left: 15.w, right: 15.w, bottom: 25),
           child: Column(
             children: [
               CustomText(
@@ -54,7 +55,6 @@ class AddCourseReviewPage extends StatelessWidget {
               SizedBox(
                 height: 70.h,
               ),
-
               CustomText(
                 text: 'Tap To Add Ratings',
                 fontSize: 12,
@@ -68,8 +68,7 @@ class AddCourseReviewPage extends StatelessWidget {
                 direction: Axis.horizontal,
                 allowHalfRating: true,
                 itemCount: 5,
-
-                itemPadding: EdgeInsets.symmetric(horizontal: 5.w  ),
+                itemPadding: EdgeInsets.symmetric(horizontal: 5.w),
                 itemBuilder: (context, _) => SvgPicture.asset(
                   AssetsData.fullStarSvg,
                 ),
@@ -81,8 +80,13 @@ class AddCourseReviewPage extends StatelessWidget {
                 height: 71.h,
               ),
               CustomRatingFormFiled(hint: 'Write Your Review'),
-              SizedBox(height: 7.h,),
-              CustomButton(Text: "SUBMIT")
+              SizedBox(
+                height: 7.h,
+              ),
+              CustomButton(
+                Text: "SUBMIT",
+                width: 345,
+              )
             ],
           ),
         ),

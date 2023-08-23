@@ -7,14 +7,14 @@ import 'package:mariam_aldakhil/core/utils/custom_button.dart';
 class CustomDetailsTextFormFiled extends StatelessWidget {
   final String hint;
 
-
-  const CustomDetailsTextFormFiled(
-      {Key? key, required this.hint, })
-      : super(key: key);
+  const CustomDetailsTextFormFiled({
+    Key? key,
+    required this.hint,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return       SizedBox(
+    return SizedBox(
       height: 50.h,
       width: 345.w,
       child: TextFormField(
@@ -25,9 +25,12 @@ class CustomDetailsTextFormFiled extends StatelessWidget {
             suffixIcon: Container(
               margin: EdgeInsets.symmetric(vertical: 1.h),
               // height: 40.h,
-              width: 116.w  ,
+              width: 116.w,
               // margin: EdgeInsets.only(bottom: 15.h, right: 15.w, left: 15.w,top: 15.h),
-              child: CustomButton(Text: "ACTIVE"),
+              child: CustomButton(
+                Text: "ACTIVE",
+                width: 116,
+              ),
             ),
             hintStyle: GoogleFonts.playfairDisplay(
                 color: kDarkGreyColor,
@@ -35,7 +38,7 @@ class CustomDetailsTextFormFiled extends StatelessWidget {
                 fontSize: 16.sp),
             border: const OutlineInputBorder(
                 borderSide: BorderSide(color: Color(0xffE1E1E1)),
-                  borderRadius: BorderRadius.all(Radius.circular(30)))),
+                borderRadius: BorderRadius.all(Radius.circular(30)))),
       ),
     );
   }

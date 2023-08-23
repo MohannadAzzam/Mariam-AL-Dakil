@@ -18,8 +18,11 @@ import 'package:mariam_aldakhil/views/news/news_view/news_view.dart';
 import 'package:mariam_aldakhil/views/products/productsDetails/product_details.dart';
 import 'package:mariam_aldakhil/views/products/productsView/products_view.dart';
 import 'package:mariam_aldakhil/views/reviewsView/reviews_view.dart';
+import 'package:mariam_aldakhil/views/settings/settings_view/settings_view.dart';
 import 'package:mariam_aldakhil/views/slapshView/splashView.dart';
 
+import 'views/profile/editProfileView/edit_profile_view.dart';
+import 'views/profile/profileView/profile_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -61,7 +64,7 @@ class MyApp extends StatelessWidget {
           getPages: [
             GetPage(
               name: '/',
-              page: () => const SplashView(),
+              page: () => const SettingsPage(),
               transition: Transition.fade,
             ),
             GetPage(
@@ -114,17 +117,28 @@ class MyApp extends StatelessWidget {
                 transition: Transition.fadeIn),
             GetPage(
                 name: '/productDetailsPage',
-                page: () =>  ProductDetailsPage(),
+                page: () => const ProductDetailsPage(),
                 transition: Transition.fadeIn),
- GetPage(
+            GetPage(
                 name: '/EmptyCartPage',
-                page: () =>  EmptyCartPage(),
+                page: () => const EmptyCartPage(),
                 transition: Transition.fadeIn),
- GetPage(
+            GetPage(
                 name: '/cartPage',
-                page: () =>  CartPage(),
+                page: () => const CartPage(),
                 transition: Transition.fadeIn),
-
+            GetPage(
+                name: '/profilePage',
+                page: () => const ProfilePage(),
+                transition: Transition.fadeIn),
+            GetPage(
+                name: '/editProfilePage',
+                page: () => const EditProfilePage(),
+                transition: Transition.fadeIn),
+            GetPage(
+                name: '/settingsPage',
+                page: () => const SettingsPage(),
+                transition: Transition.fadeIn),
           ],
           // home:
         );
