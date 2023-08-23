@@ -14,7 +14,7 @@ class ArrowAppBar extends StatelessWidget {
       leading: Builder(builder: (context) {
         return IconButton(
             onPressed: () {
-              Get.back(); 
+              Get.back();
             },
             icon: SvgPicture.asset(
               AssetsData.back,

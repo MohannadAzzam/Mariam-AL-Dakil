@@ -3,14 +3,15 @@ import 'package:mariam_aldakhil/core/utils/assets.dart';
 class Setting {
   String icon;
   String text;
+  int index;
 
-  Setting(this.icon, this.text);
+  Setting(this.index, this.icon, this.text);
 }
 
 class SettingList {
   List<Setting> settingList = [
-    Setting(AssetsData.passwordSettingsSvg, "Change Password"),
-    Setting(AssetsData.languageSvg, "Language"),
+    Setting(0, AssetsData.passwordSettingsSvg, "Change Password"),
+    Setting(1, AssetsData.languageSvg, "Language"),
   ];
 }
 
@@ -23,10 +24,10 @@ class SettingList {
 
 class SettingScreenList {
   List<Setting> settingScreenList = [
-    Setting(AssetsData.aboutSvg, "About Us"),
-    Setting(AssetsData.contactSvg, "Contact Us"),
-    Setting(AssetsData.faqSvg, "Faq's"),
-    Setting(AssetsData.privacySvg, "Privacy Policy"),
-    Setting(AssetsData.termsSvg, "Terms & Conditions")
+    Setting(2, AssetsData.aboutSvg, "About Us"),
+    Setting(3, AssetsData.contactSvg, "Contact Us"),
+    Setting(4, AssetsData.faqSvg, "Faq's"),
+    Setting(5, AssetsData.privacySvg, "Privacy Policy"),
+    Setting(6, AssetsData.termsSvg, "Terms & Conditions")
   ];
 }

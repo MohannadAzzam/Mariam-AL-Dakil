@@ -18,11 +18,12 @@ import 'package:mariam_aldakhil/views/news/news_view/news_view.dart';
 import 'package:mariam_aldakhil/views/products/productsDetails/product_details.dart';
 import 'package:mariam_aldakhil/views/products/productsView/products_view.dart';
 import 'package:mariam_aldakhil/views/reviewsView/reviews_view.dart';
+import 'package:mariam_aldakhil/views/settings/about_us_view/about_us_view.dart';
 import 'package:mariam_aldakhil/views/settings/settings_view/settings_view.dart';
 import 'package:mariam_aldakhil/views/slapshView/splashView.dart';
-
 import 'views/profile/editProfileView/edit_profile_view.dart';
 import 'views/profile/profileView/profile_view.dart';
+import 'views/settings/change_password_view/change_password_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -64,7 +65,7 @@ class MyApp extends StatelessWidget {
           getPages: [
             GetPage(
               name: '/',
-              page: () => const SettingsPage(),
+              page: () => const SplashView(),
               transition: Transition.fade,
             ),
             GetPage(
@@ -138,6 +139,14 @@ class MyApp extends StatelessWidget {
             GetPage(
                 name: '/settingsPage',
                 page: () => const SettingsPage(),
+                transition: Transition.fadeIn),
+            GetPage(
+                name: '/changePasswordPage',
+                page: () => const ChangePasswordPage(),
+                transition: Transition.fadeIn),
+            GetPage(
+                name: '/aboutUsPage',
+                page: () => const AboutUsPage(),
                 transition: Transition.fadeIn),
           ],
           // home:

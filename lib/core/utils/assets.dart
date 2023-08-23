@@ -21,6 +21,8 @@ class AssetsData {
 
 
   static const img = 'assets/images/img.png';
+  static const aboutUsImage = 'assets/images/about_us.jpg';
+
 
   /////////////////////////////
   static const emailSvg = 'assets/svgIcons/email.svg';

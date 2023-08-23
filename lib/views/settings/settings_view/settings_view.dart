@@ -6,9 +6,7 @@ import 'package:mariam_aldakhil/modle/settings_data.dart';
 import 'package:mariam_aldakhil/views/settings/settings_view/widgets/custom_settings_unit.dart';
 import '../../../constants.dart';
 import '../../../core/utils/assets.dart';
-import '../../../modle/profile_data.dart';
 import '../../homeView/drawer/drawer_body.dart';
-import '../../homeView/widget/custom_home_text.dart';
 
 class SettingsPage extends StatelessWidget {
   const SettingsPage({super.key});
@@ -23,15 +21,6 @@ class SettingsPage extends StatelessWidget {
         child: DrawerBody(),
       ),
       appBar: AppBar(
-        actions: [
-          IconButton(
-              onPressed: () {
-                Get.toNamed('editProfilePage');
-              },
-              icon: SvgPicture.asset(
-                AssetsData.editSvg,
-              ))
-        ],
         leading: Builder(builder: (context) {
           return IconButton(
               onPressed: () {
@@ -66,7 +55,10 @@ class SettingsPage extends StatelessWidget {
                           icon: settingList[index].icon,
                           text: settingList[index].text,
                           onTap: () {
-                            print(settingList[index].text);
+                            if (settingList[index].index == 0) {
+                              Get.toNamed('/changePasswordPage');
+                            }
+                            print(settingList[index]);
                           },
                         );
                       },
@@ -94,7 +86,10 @@ class SettingsPage extends StatelessWidget {
                       itemBuilder: (context, index) {
                         return CustomSetttingsUnit(
                           onTap: () {
-                            print(settingsScreenList[index].text);
+                            if (settingsScreenList[index].index == 2) {
+                              Get.toNamed('/aboutUsPage');
+                            }
+                            print(settingsScreenList[index]);
                           },
                           icon: settingsScreenList[index].icon,
                           text: settingsScreenList[index].text,

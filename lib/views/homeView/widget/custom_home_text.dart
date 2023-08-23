@@ -27,7 +27,7 @@ class CustomText extends StatelessWidget {
       // softWrap: true,
       // textAlign: TextAlign.justify,
       overflow:textOverflow,
-      // maxLines: 2,
+      // maxLines: minLin,
       style: GoogleFonts.playfairDisplay(
           fontWeight: fontWeight ?? FontWeight.bold,
           fontSize: fontSize?.sp ?? 15.sp,
