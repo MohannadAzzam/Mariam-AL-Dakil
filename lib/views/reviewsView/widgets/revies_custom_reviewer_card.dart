@@ -23,7 +23,7 @@ class CustomReviewerCard extends StatelessWidget {
           Row(
             children: [
               CircleAvatar(
-                foregroundImage:  AssetImage(AssetsData.ratingFaceImage),
+                foregroundImage:  const AssetImage(AssetsData.ratingFaceImage),
                 radius: 24.r,
               ),
               SizedBox(width: 15.w),
@@ -59,7 +59,7 @@ class CustomReviewerCard extends StatelessWidget {
                       AssetsData.fullStarSvg,
                     ),
                     onRatingUpdate: (rating) {
-                      print(rating);
+                      // print(rating);
                     },
                   ),
                 ),

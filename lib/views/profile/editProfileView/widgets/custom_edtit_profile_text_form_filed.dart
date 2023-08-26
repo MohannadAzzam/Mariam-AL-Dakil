@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
+
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -23,7 +22,7 @@ class CustomEditProfileTextForm extends StatelessWidget {
         decoration: InputDecoration(
             contentPadding:
                 EdgeInsets.symmetric(horizontal: 26.w, vertical: 15.h),
-            hintText: "$hint",
+            hintText: hint,
             hintStyle: GoogleFonts.playfairDisplay(
                 color: kDarkGreyColor,
                 fontWeight: FontWeight.bold,

@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -35,12 +36,12 @@ class AddCourseReviewPage extends StatelessWidget {
               EdgeInsets.only(top: 25.h, left: 15.w, right: 15.w, bottom: 25),
           child: Column(
             children: [
-              CustomText(
+              const CustomText(
                 text: "Diploma Of Information Technology Networking",
                 fontSize: 18,
               ),
               Row(
-                children: [
+                children: const [
                   CustomText(
                     text: "By ",
                     fontSize: 12,
@@ -55,7 +56,7 @@ class AddCourseReviewPage extends StatelessWidget {
               SizedBox(
                 height: 70.h,
               ),
-              CustomText(
+              const CustomText(
                 text: 'Tap To Add Ratings',
                 fontSize: 12,
               ),
@@ -73,18 +74,18 @@ class AddCourseReviewPage extends StatelessWidget {
                   AssetsData.fullStarSvg,
                 ),
                 onRatingUpdate: (rating) {
-                  print(rating);
+                  // print(rating);
                 },
               ),
               SizedBox(
                 height: 71.h,
               ),
-              CustomRatingFormFiled(hint: 'Write Your Review'),
+              const CustomRatingFormFiled(hint: 'Write Your Review'),
               SizedBox(
                 height: 7.h,
               ),
-              CustomButton(
-                Text: "SUBMIT",
+              const CustomButton(
+                text: "SUBMIT",
                 width: 345,
               )
             ],

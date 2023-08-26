@@ -97,8 +97,8 @@ class CartPage extends StatelessWidget {
 //26.5
               SizedBox(height: 26.5.h),
 
-              CustomButton(
-                Text: "CHEKOUT",
+              const CustomButton(
+                text: "CHEKOUT",
                 width: 345,
               )
             ],

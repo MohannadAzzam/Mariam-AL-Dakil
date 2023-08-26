@@ -27,8 +27,8 @@ class CustomDetailsTextFormFiled extends StatelessWidget {
               // height: 40.h,
               width: 116.w,
               // margin: EdgeInsets.only(bottom: 15.h, right: 15.w, left: 15.w,top: 15.h),
-              child: CustomButton(
-                Text: "ACTIVE",
+              child: const CustomButton(
+                text: "ACTIVE",
                 width: 116,
               ),
             ),

@@ -1,3 +1,5 @@
+// ignore_for_file: no_leading_underscores_for_local_identifiers
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
@@ -12,11 +14,11 @@ class HomeViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     var myIndex = 1;
 
-    final ScrollController _controller = ScrollController();
+    final ScrollController controller = ScrollController();
 
     // final double _height = 305.0.w;
     void _animateToIndex(int index, double height) {
-      _controller.animateTo(
+      controller.animateTo(
         index * height,
         duration: const Duration(milliseconds: 750),
         curve: Curves.fastOutSlowIn,
@@ -52,7 +54,7 @@ class HomeViewBody extends StatelessWidget {
             child: ListView.builder(
                 physics: const BouncingScrollPhysics(),
                 scrollDirection: Axis.horizontal,
-                controller: _controller,
+                controller: controller,
                 itemCount: 2,
                 itemBuilder: (context, index) {
                   return Row(

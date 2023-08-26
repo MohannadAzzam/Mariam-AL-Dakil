@@ -35,7 +35,7 @@ class TestPage extends StatelessWidget {
                 width: 70.w,
                 height: 70.h,
                 decoration: BoxDecoration(
-                    image: DecorationImage(
+                    image: const DecorationImage(
                         image: AssetImage(AssetsData.img), fit: BoxFit.cover),
                     color: Colors.white,
                     boxShadow: kContainerShadow,
@@ -50,14 +50,14 @@ class TestPage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
-                            margin: EdgeInsets.only(right: 64),
+                            margin: const EdgeInsets.only(right: 64),
                             // width: 244.w,
-                            child: CustomText(
+                            child: const CustomText(
                               text: "The Earth Ceramic Coffee Mug",
                               fontSize: 14,
                               textOverflow: TextOverflow.ellipsis,
                             )),
-                        CustomText(
+                        const CustomText(
                           text: "280 KWD",
                           fontSize: 15,
                           color: kGoldenColor,
@@ -77,7 +77,7 @@ class TestPage extends StatelessWidget {
                         decoration: BoxDecoration(
                             border: Border.all(color: kGreyColor),
                             borderRadius:
-                                BorderRadius.all(Radius.circular(15))),
+                                const BorderRadius.all(Radius.circular(15))),
                         child: Row(
                           children: [
                             GetBuilder<ProductController>(builder: (_) {

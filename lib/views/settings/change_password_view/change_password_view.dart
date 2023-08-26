@@ -4,7 +4,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:mariam_aldakhil/core/utils/custom_button.dart';
-import 'package:mariam_aldakhil/views/courses/courseDetails/widgets/custom_details_text_form_filed.dart';
 import 'package:mariam_aldakhil/views/homeView/widget/custom_home_text.dart';
 import 'package:mariam_aldakhil/views/profile/editProfileView/widgets/custom_edtit_profile_text_form_filed.dart';
 
@@ -30,7 +29,7 @@ class ChangePasswordPage extends StatelessWidget {
       ),
       body: SafeArea(
           child: SingleChildScrollView(
-        child: Container(
+        child: SizedBox(
           width: Get.height,
           child: Column(
             children: [
@@ -45,7 +44,7 @@ class ChangePasswordPage extends StatelessWidget {
               const CustomEditProfileTextForm(hint: "Current Password"),
               const CustomEditProfileTextForm(hint: "New Password"),
               const CustomEditProfileTextForm(hint: "Confirm New Password"),
-              const CustomButton(Text: "SAVE", width: 315)
+              const CustomButton(text: "SAVE", width: 315)
             ],
           ),
         ),

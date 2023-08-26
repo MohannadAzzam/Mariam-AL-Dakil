@@ -8,7 +8,7 @@ import '../../../homeView/widget/custom_home_text.dart';
 
 class CustomPlayCard extends StatelessWidget {
 
-final lessonNum;
+final int? lessonNum;
    const CustomPlayCard({Key? key, this.lessonNum}) : super(key: key);
 
   @override

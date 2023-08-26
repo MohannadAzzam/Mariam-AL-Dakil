@@ -1,21 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:get/get.dart';
 import 'package:mariam_aldakhil/constants.dart';
 
 import '../../views/homeView/widget/custom_home_text.dart';
 
 class CustomButton extends StatelessWidget {
-  final String Text;
+  final String text;
   final double width;
   final Function()? onPressed;
   const CustomButton(
-      {Key? key, required this.Text, this.onPressed, required this.width})
+      {Key? key, required this.text, this.onPressed, required this.width})
       : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: width.w,
       height: 50.h,
       child: ElevatedButton(
@@ -27,7 +26,7 @@ class CustomButton extends StatelessWidget {
             backgroundColor: const MaterialStatePropertyAll(kButtonColor)),
         onPressed: onPressed,
         child: CustomText(
-            text: Text,
+            text: text,
             color: kBlackColor,
             fontSize: 16,
             fontWeight: FontWeight.w900),

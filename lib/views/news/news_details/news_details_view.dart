@@ -35,6 +35,7 @@ class NewsDetailsPage extends StatelessWidget {
                   },
                   icon: SvgPicture.asset(
                     AssetsData.back,
+                    // ignore: deprecated_member_use
                     color: Colors.white,
                   ));
             }),
@@ -45,7 +46,7 @@ class NewsDetailsPage extends StatelessWidget {
             flexibleSpace: FlexibleSpaceBar(
               background: Stack(
                 children: [
-                  Container(
+                  SizedBox(
                     height: Get.height,
                     width: Get.width,
                     child: Image.asset(
@@ -77,7 +78,7 @@ class NewsDetailsPage extends StatelessWidget {
                       fontSize: 22,
                     ),
   SizedBox(height: 6.h,),
-                    CustomText(
+                    const CustomText(
                       text:
                           'Additional center in the kingdom and two in the UAE planned to open this year',
                       fontSize: 15,

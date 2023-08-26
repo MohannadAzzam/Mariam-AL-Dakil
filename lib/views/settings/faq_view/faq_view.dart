@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
+import '../../../core/utils/assets.dart';
 
-import 'assets.dart';
+class FaqsPage extends StatelessWidget {
+  const FaqsPage({super.key});
 
-class ArrowAppBar extends StatelessWidget {
-  final String pageTitle;
-  const ArrowAppBar({Key? key, required this.pageTitle}) : super(key: key);
-
+ 
   @override
   Widget build(BuildContext context) {
-    return AppBar(
+    return Scaffold(
+    
+      appBar: AppBar(
       leading: Builder(builder: (context) {
         return IconButton(
             onPressed: () {
@@ -20,7 +21,11 @@ class ArrowAppBar extends StatelessWidget {
               AssetsData.back,
             ));
       }),
-      title:  Text(pageTitle),
+      title:  const Text("Faq's"),
+      ),
+      body: SafeArea(child: SingleChildScrollView(
+        child: Container(),
+      )),
     );
   }
 }

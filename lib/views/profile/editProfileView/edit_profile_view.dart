@@ -1,14 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
+
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:mariam_aldakhil/core/utils/arrow_app_bar.dart';
+
 import 'package:mariam_aldakhil/views/profile/editProfileView/widgets/custom_edtit_profile_text_form_filed.dart';
 
-import '../../../constants.dart';
 import '../../../core/utils/assets.dart';
 import '../../../core/utils/custom_button.dart';
 
@@ -45,7 +42,7 @@ class EditProfilePage extends StatelessWidget {
               CustomEditProfileTextForm(hint: "Phone"),
               CustomEditProfileTextForm(hint: "City"),
               CustomEditProfileTextForm(hint: "Address"),
-              CustomButton(Text: "SAVE", width: 315)
+              CustomButton(text: "SAVE", width: 315)
             ],
           ),
         ),

@@ -47,9 +47,9 @@ class ProductsPage extends StatelessWidget {
                 title: productList[index].title,
                 price: productList[index].price,
                 onTap: (){
-                  print(productList[index].id);
-                  var s = productList[index];
-                  print(s.title);
+                  // print(productList[index].id);
+                  // var s = productList[index];
+                  // print(s.title);
                 Get.toNamed('productDetailsPage',arguments:
                    productList[index],
                   // {"title" : productList[index].title},

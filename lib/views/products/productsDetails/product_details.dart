@@ -57,6 +57,7 @@ class ProductDetailsPage extends StatelessWidget {
                 isLabelVisible: true,
                 // padding: EdgeInsets.all(5),
                 child: SvgPicture.asset(
+                  // ignore: deprecated_member_use
                   color: kBlackColor,
                   AssetsData.cartSvg,
                 ),
@@ -71,7 +72,7 @@ class ProductDetailsPage extends StatelessWidget {
                 AssetsData.back,
               ));
         }),
-        title: Text("Product Details"),
+        title: const Text("Product Details"),
       ),
       body: SafeArea(
         child: SingleChildScrollView(
@@ -180,7 +181,7 @@ class ProductDetailsPage extends StatelessWidget {
                       alignment: Alignment.center,
                       child: CustomButton(
                         width: 345,
-                        Text: "ADD TO CART",
+                        text: "ADD TO CART",
                         onPressed: () {
                           //
                           // productList.forEach((element) {

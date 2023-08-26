@@ -28,7 +28,7 @@ class MyCourseDetailsPage extends StatelessWidget {
           width: Get.width,
           child: CustomButton(
             width: 345,
-            Text: "ADD REVIEW",
+            text: "ADD REVIEW",
             onPressed: () {
               Get.toNamed('addCourseReviewPage');
             },

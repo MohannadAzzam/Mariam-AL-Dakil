@@ -9,7 +9,7 @@ import 'package:mariam_aldakhil/views/homeView/drawer/drawer_body.dart';
 import 'package:mariam_aldakhil/views/profile/profileView/widgets/custom_profile_data.dart';
 
 import '../../../constants.dart';
-import '../../homeView/widget/custom_home_text.dart';
+
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
@@ -71,7 +71,7 @@ class ProfilePage extends StatelessWidget {
               ),
               SizedBox(height: 21.h),
               const CustomButton(
-                Text: "UPLOAD/CHANGE PHOTO",
+                text: "UPLOAD/CHANGE PHOTO",
                 width: 280,
               ),
               SizedBox(height: 21.h),

@@ -58,7 +58,7 @@ class SettingsPage extends StatelessWidget {
                             if (settingList[index].index == 0) {
                               Get.toNamed('/changePasswordPage');
                             }
-                            print(settingList[index]);
+                            // print(settingList[index]);
                           },
                         );
                       },
@@ -88,8 +88,12 @@ class SettingsPage extends StatelessWidget {
                           onTap: () {
                             if (settingsScreenList[index].index == 2) {
                               Get.toNamed('/aboutUsPage');
+                            } else if (settingsScreenList[index].index == 3) {
+                              Get.toNamed('/contactUsPage');
+                            } else if (settingsScreenList[index].index == 4) {
+                              Get.toNamed('/faqsPage');
                             }
-                            print(settingsScreenList[index]);
+                            // print(settingsScreenList[index]);
                           },
                           icon: settingsScreenList[index].icon,
                           text: settingsScreenList[index].text,

@@ -32,7 +32,7 @@ class CustomMyCoursesCard extends StatelessWidget {
                   borderRadius:  BorderRadius.all(
                     Radius.circular(15.r),
                   ),
-                  image:  DecorationImage(
+                  image:  const DecorationImage(
                       image: AssetImage(AssetsData.homeThreeThree),
                       fit: BoxFit.cover)),
             ),

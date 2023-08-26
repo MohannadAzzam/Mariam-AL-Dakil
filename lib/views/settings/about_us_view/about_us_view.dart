@@ -1,14 +1,9 @@
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
-import 'package:mariam_aldakhil/constants.dart';
-
-import 'package:mariam_aldakhil/core/utils/arrow_app_bar.dart';
 import 'package:mariam_aldakhil/views/homeView/widget/custom_home_text.dart';
 import 'package:mariam_aldakhil/views/settings/about_us_view/widgets/custom_about_us_trainers.dart';
-
 import '../../../core/utils/assets.dart';
 
 class AboutUsPage extends StatelessWidget {
@@ -75,14 +70,19 @@ class AboutUsPage extends StatelessWidget {
                 fontSize: 26,
               ),
             ),
-            ListView.builder(
-                scrollDirection: Axis.horizontal,
+            // Expanded(
+            // height: 20,
+            // child:
+            GridView.builder(
+                itemCount: 3,
                 shrinkWrap: true,
                 physics: const NeverScrollableScrollPhysics(),
-                itemCount: 10,
-                itemBuilder: ((context, index) {
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    childAspectRatio: 0.9, crossAxisCount: 2),
+                itemBuilder: (context, index) {
                   return const CustomAboutUsTrainers();
-                }))
+                }),
+            // )
           ],
         ),
       )),

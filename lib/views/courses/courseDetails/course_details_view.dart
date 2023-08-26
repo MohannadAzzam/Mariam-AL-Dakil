@@ -23,9 +23,9 @@ class CourseDetailsPage extends StatelessWidget {
     return Scaffold(
         bottomNavigationBar: Container(
           height: 80.h,
-          padding: EdgeInsets.all(15),
+          padding: const EdgeInsets.all(15),
           width: Get.width,
-          child: CustomDetailsTextFormFiled(
+          child: const CustomDetailsTextFormFiled(
             hint: 'Email Address',
           ),
         ),
@@ -155,7 +155,7 @@ class CourseDetailsPage extends StatelessWidget {
                   ListView.builder(
                       itemCount: 9,
                       shrinkWrap: true,
-                      physics: NeverScrollableScrollPhysics(),
+                      physics: const NeverScrollableScrollPhysics(),
                       itemBuilder: (context, index) {
                         return CustomPlayCard(
                           lessonNum: index + 1,

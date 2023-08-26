@@ -32,7 +32,7 @@ class ReviewsPage extends StatelessWidget {
         child: SingleChildScrollView(
           child: ListView.separated(
               shrinkWrap: true,
-              physics: NeverScrollableScrollPhysics(),
+              physics: const NeverScrollableScrollPhysics(),
               itemBuilder: (context,index){
                 int random = Random().nextInt(5)+1;
                 var randomNames = RandomNames(Zone.us);

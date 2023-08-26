@@ -5,7 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:mariam_aldakhil/constants.dart';
 import 'package:mariam_aldakhil/views/cart/cart_view/cart_view.dart';
 import 'package:mariam_aldakhil/views/cart/emptyCartView/empty_cart_view.dart';
-import 'package:mariam_aldakhil/views/courses/addCourseReviewView/add_course_Review_view.dart';
+import 'package:mariam_aldakhil/views/courses/addCourseReviewView/add_course_review_view.dart';
 import 'package:mariam_aldakhil/views/auth/forgot_password/forgot_password_page.dart';
 import 'package:mariam_aldakhil/views/auth/login/login_view.dart';
 import 'package:mariam_aldakhil/views/auth/register/register_page.dart';
@@ -19,11 +19,13 @@ import 'package:mariam_aldakhil/views/products/productsDetails/product_details.d
 import 'package:mariam_aldakhil/views/products/productsView/products_view.dart';
 import 'package:mariam_aldakhil/views/reviewsView/reviews_view.dart';
 import 'package:mariam_aldakhil/views/settings/about_us_view/about_us_view.dart';
+import 'package:mariam_aldakhil/views/settings/contact_us_view/contct_us_view.dart';
 import 'package:mariam_aldakhil/views/settings/settings_view/settings_view.dart';
-import 'package:mariam_aldakhil/views/slapshView/splashView.dart';
+import 'package:mariam_aldakhil/views/slapshView/splash_view.dart';
 import 'views/profile/editProfileView/edit_profile_view.dart';
 import 'views/profile/profileView/profile_view.dart';
 import 'views/settings/change_password_view/change_password_view.dart';
+import 'views/settings/faq_view/faq_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -147,6 +149,14 @@ class MyApp extends StatelessWidget {
             GetPage(
                 name: '/aboutUsPage',
                 page: () => const AboutUsPage(),
+                transition: Transition.fadeIn),
+            GetPage(
+                name: '/contactUsPage',
+                page: () => const ContactUsPage(),
+                transition: Transition.fadeIn),
+            GetPage(
+                name: '/faqsPage',
+                page: () => const FaqsPage(),
                 transition: Transition.fadeIn),
           ],
           // home:

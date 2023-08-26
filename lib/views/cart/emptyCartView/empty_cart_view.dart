@@ -59,7 +59,7 @@ class EmptyCartPage extends StatelessWidget {
               SizedBox(height: 24.h),
               CustomButton(
                 width: 250,
-                Text: "Go to products".toUpperCase(),
+                text: "Go to products".toUpperCase(),
                 onPressed: () {
                   Get.toNamed('productsPage');
                 },

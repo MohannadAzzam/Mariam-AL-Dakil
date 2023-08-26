@@ -2,12 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
-
-import '../../../constants.dart';
 import '../../../core/utils/assets.dart';
 import '../widgets/custom_auth_button.dart';
 import '../widgets/custom_auth_double_text.dart';
-import '../widgets/custom_auth_text.dart';
 import '../widgets/custom_auth_text_form_field.dart';
 
 class RegisterBody extends StatelessWidget {
