@@ -75,7 +75,7 @@ class ProductDetailsPage extends StatelessWidget {
         title: const Text("Product Details"),
       ),
       body: SafeArea(
-        child: SingleChildScrollView(
+        child: SingleChildScrollView( physics: const BouncingScrollPhysics(),
             child: Column(
           // crossAxisAlignment: CrossAxisAlignment.center,
           // mainAxisAlignment: MainAxisAlignment.center,

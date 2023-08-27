@@ -33,32 +33,34 @@ class ProductsPage extends StatelessWidget {
           "Products",
         ),
       ),
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            SizedBox(height: 25.h,),
-            ListView.builder(
-              shrinkWrap: true ,
-              physics: const NeverScrollableScrollPhysics(),
-              itemCount: productList.length,
-                itemBuilder: (context,index){
-              return  CustomProductCard(
-                image: productList[index].image,
-                title: productList[index].title,
-                price: productList[index].price,
-                onTap: (){
-                  // print(productList[index].id);
-                  // var s = productList[index];
-                  // print(s.title);
-                Get.toNamed('productDetailsPage',arguments:
-                   productList[index],
-                  // {"title" : productList[index].title},
-                  // {"price", productList[index].price},
-                  // {"tax", productList[index].tax},
-                      );
-              },);
-            }),
-          ],
+      body: SafeArea(
+        child: SingleChildScrollView( physics: const BouncingScrollPhysics(),
+          child: Column(
+            children: [
+              SizedBox(height: 25.h,),
+              ListView.builder(
+                shrinkWrap: true ,
+                physics: const NeverScrollableScrollPhysics(),
+                itemCount: productList.length,
+                  itemBuilder: (context,index){
+                return  CustomProductCard(
+                  image: productList[index].image,
+                  title: productList[index].title,
+                  price: productList[index].price,
+                  onTap: (){
+                    // print(productList[index].id);
+                    // var s = productList[index];
+                    // print(s.title);
+                  Get.toNamed('productDetailsPage',arguments:
+                     productList[index],
+                    // {"title" : productList[index].title},
+                    // {"price", productList[index].price},
+                    // {"tax", productList[index].tax},
+                        );
+                },);
+              }),
+            ],
+          ),
         ),
       ),
     );

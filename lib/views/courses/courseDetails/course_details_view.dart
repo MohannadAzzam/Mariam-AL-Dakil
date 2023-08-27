@@ -42,7 +42,7 @@ class CourseDetailsPage extends StatelessWidget {
           title: const Text('Course Details'),
         ),
         body: SafeArea(
-          child: SingleChildScrollView(
+          child: SingleChildScrollView( physics: const BouncingScrollPhysics(),
             child: Padding(
               padding: EdgeInsets.only(top: 25.h, left: 15.w, right: 15.w),
               child: Column(

@@ -32,7 +32,7 @@ class EmptyCartPage extends StatelessWidget {
         ),
       ),
       body: SafeArea(
-          child: SingleChildScrollView(
+          child: SingleChildScrollView( physics: const BouncingScrollPhysics(),
         child: Container(
           margin: EdgeInsets.only(top: 100.h),
           width: Get.width,

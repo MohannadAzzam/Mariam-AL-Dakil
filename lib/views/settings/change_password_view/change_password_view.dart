@@ -28,7 +28,7 @@ class ChangePasswordPage extends StatelessWidget {
         title: const Text("Change password"),
       ),
       body: SafeArea(
-          child: SingleChildScrollView(
+          child: SingleChildScrollView( physics: const BouncingScrollPhysics(),
         child: SizedBox(
           width: Get.height,
           child: Column(

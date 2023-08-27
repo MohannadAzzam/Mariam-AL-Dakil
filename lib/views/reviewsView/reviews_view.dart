@@ -29,7 +29,7 @@ class ReviewsPage extends StatelessWidget {
         title: const Text("Reviews"),
       ),
       body: SafeArea(
-        child: SingleChildScrollView(
+        child: SingleChildScrollView( physics: const BouncingScrollPhysics(),
           child: ListView.separated(
               shrinkWrap: true,
               physics: const NeverScrollableScrollPhysics(),

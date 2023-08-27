@@ -28,7 +28,7 @@ class EditProfilePage extends StatelessWidget {
         title: const Text("Edit Profile"),
       ),
       body: SafeArea(
-          child: SingleChildScrollView(
+          child: SingleChildScrollView( physics: const BouncingScrollPhysics(),
         child: Container(
           width: Get.width,
           padding: EdgeInsets.only(top: 25.h, left: 30.w, right: 30.w),

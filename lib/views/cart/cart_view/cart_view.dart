@@ -28,7 +28,7 @@ class CartPage extends StatelessWidget {
         title: const Text("Cart"),
       ),
       body: SafeArea(
-          child: SingleChildScrollView(
+          child: SingleChildScrollView( physics: const BouncingScrollPhysics(),
         child: Container(
           margin: EdgeInsets.only(left: 15.w, right: 15.w),
           child: Column(

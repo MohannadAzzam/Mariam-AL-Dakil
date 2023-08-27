@@ -1,3 +1,4 @@
+import 'package:flutter/widgets.dart';
 
 
 class AssetsData {
@@ -19,10 +20,8 @@ class AssetsData {
   static const serverImage = 'assets/images/server.jpg';
   static const towerImage = 'assets/images/towers.jpg';
 
-
   static const img = 'assets/images/img.png';
   static const aboutUsImage = 'assets/images/about_us.jpg';
-
 
   /////////////////////////////
   static const emailSvg = 'assets/svgIcons/email.svg';
@@ -58,4 +57,21 @@ class AssetsData {
   static const fullStarSvg = 'assets/svgIcons/full_star.svg';
   static const emptyStarSvg = 'assets/svgIcons/empty_star.svg';
   static const emptyCartSvg = 'assets/svgIcons/empty_cart.svg';
+  static const arrowUpSvg = 'assets/svgIcons/arrouw_up.svg';
+  static const arrowDownSvg = 'assets/svgIcons/arrouw_down.svg';
+
+  // static const IconData aa = (IconData) "sadfasdf";
 }
+
+// import 'package:flutter/widgets.dart';
+
+class MariamIcons {
+  MariamIcons._();
+
+  static const _kFontFam = 'MariamIcons';
+  static const String? _kFontPkg = null;
+
+  static const IconData arrouw_up = IconData(0xe81b, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData arrow_down = IconData(0xe81c, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+}
+

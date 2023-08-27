@@ -4,6 +4,8 @@
         android:label="Mariam Al Dakhil"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+           <meta-data android:name="com.google.android.geo.API_KEY"
+               android:value="AIzaSyAauocbnFgGsfHGEd-u9IYEH17PPgW3MgY"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"

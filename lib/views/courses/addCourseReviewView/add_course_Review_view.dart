@@ -30,7 +30,7 @@ class AddCourseReviewPage extends StatelessWidget {
         title: const Text("Add Course Review"),
       ),
       body: SafeArea(
-          child: SingleChildScrollView(
+          child: SingleChildScrollView( physics: const BouncingScrollPhysics(),
         child: Container(
           margin:
               EdgeInsets.only(top: 25.h, left: 15.w, right: 15.w, bottom: 25),

@@ -46,6 +46,9 @@ dependencies:
   random_name_generator: ^1.1.0
   faker: ^2.1.0
   smooth_page_indicator: ^1.1.0
+  geolocator: ^10.0.0
+  google_maps_flutter: ^2.3.0
+  expandable: ^5.0.1
 
 dev_dependencies:
   flutter_test:
@@ -86,6 +89,10 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
+  fonts:
+    - family: MariamIcons
+      fonts:
+        - asset: assets/fonts/MariamIcons.ttf
   # fonts:
   #   - family: Schyler
   #     fonts:

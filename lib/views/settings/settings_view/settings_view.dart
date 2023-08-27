@@ -35,7 +35,7 @@ class SettingsPage extends StatelessWidget {
         ),
       ),
       body: SafeArea(
-          child: SingleChildScrollView(
+          child: SingleChildScrollView( physics: const BouncingScrollPhysics(),
         child: Column(
           children: [
             SizedBox(height: 25.h),
@@ -89,7 +89,7 @@ class SettingsPage extends StatelessWidget {
                             if (settingsScreenList[index].index == 2) {
                               Get.toNamed('/aboutUsPage');
                             } else if (settingsScreenList[index].index == 3) {
-                              Get.toNamed('/contactUsPage');
+                              // Get.toNamed('/contactUsPage');
                             } else if (settingsScreenList[index].index == 4) {
                               Get.toNamed('/faqsPage');
                             }

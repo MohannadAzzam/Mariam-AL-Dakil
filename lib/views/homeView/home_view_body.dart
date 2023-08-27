@@ -25,7 +25,7 @@ class HomeViewBody extends StatelessWidget {
       );
     }
 
-    return SingleChildScrollView(
+    return SingleChildScrollView( physics: const BouncingScrollPhysics(),
       scrollDirection: Axis.vertical,
       // margin: EdgeInsets.only(top: 22.h, left: 15.w),
       child: Column(

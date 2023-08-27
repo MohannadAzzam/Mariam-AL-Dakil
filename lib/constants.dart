@@ -13,6 +13,7 @@ const kLightGreyColor = Color(0xffF2F2F2);
 const kDarkGreyColor = Color(0xff717171);
 const kDrawerBorder = Color(0xffF2F2F2);
 const kTextFormBorder = Color(0xffE1E1E1);
+const kArrow = Color(0xffFCE5E9);
 
 const kContainerShadow = [
   BoxShadow(

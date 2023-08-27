@@ -67,7 +67,7 @@ class NewsDetailsPage extends StatelessWidget {
             ),
           ),
           SliverFillRemaining(
-            child: SingleChildScrollView(
+            child: SingleChildScrollView( physics: const BouncingScrollPhysics(),
               child: Padding(
                 padding: const EdgeInsets.all(15.0),
                 child: Column(

@@ -29,7 +29,7 @@ class AboutUsPage extends StatelessWidget {
         title: const Text("About US"),
       ),
       body: SafeArea(
-          child: SingleChildScrollView(
+          child: SingleChildScrollView( physics: const BouncingScrollPhysics(),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [

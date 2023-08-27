@@ -16,7 +16,8 @@ class ForgotPasswordBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
+    return SingleChildScrollView(          physics: const BouncingScrollPhysics(),
+
       child: SizedBox(
         height: Get.height,
         child: SafeArea(
